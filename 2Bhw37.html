@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/enterInPlugin.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="js/sort.js"></script>
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="row">
+    <div class="container" id="wrapper">
+        <div class="form-group">
+            <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Search in table">
+        </div>
+        <br>
+        <table class="table table-striped" id="mytable" cellspacing="0" style="width: 100%;">
+            <thead>
+            <tr>
+                <th onclick="sort_age();">Code</th>
+                <th onclick="sort_name();">Flag</th>
+                <th onclick="sort_name();">Name</th>
+                <th onclick="sort_name();">Capital</th>
+                <th onclick="sort_age();">Population</th>
+            </tr>
+            </thead>
+            <tbody class="root" id="table1"></tbody>
+        </table>
+        <input type="hidden" id="name_order" value="asc">
+        <input type="hidden" id="age_order" value="asc">
+    </div>
+</div>
+
+</div>
+</body>
+</html>
