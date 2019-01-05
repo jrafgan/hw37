@@ -1,0 +1,12 @@
+/* tables */
+table {
+	background-color: #CDCDCD;
+	width: 100%;
+}
+table thead th {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
